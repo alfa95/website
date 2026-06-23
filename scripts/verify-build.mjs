@@ -5,6 +5,10 @@ import { join, relative, extname } from "node:path";
 const root = new URL("..", import.meta.url).pathname;
 const outDir = join(root, "out");
 
+const siteTs = readFileSync(join(root, "src/lib/site.ts"), "utf8");
+const siteUrlMatch = siteTs.match(/url:\s*"([^"]+)"/);
+const siteUrl = siteUrlMatch?.[1] ?? "https://www.sanjuca.in";
+
 const requiredAssets = [
   "favicon.ico",
   "favicon.svg",
@@ -124,8 +128,8 @@ if (existsSync(sitemapPath)) {
   if (urlCount !== expectedUrlCount) {
     errors.push(`sitemap.xml has ${urlCount} URLs, expected ${expectedUrlCount}`);
   }
-  if (!sitemapXml.includes("https://www.sanjuassociates.in/")) {
-    errors.push("sitemap.xml missing homepage URL");
+  if (!sitemapXml.includes(`${siteUrl}/`)) {
+    errors.push(`sitemap.xml missing homepage URL (${siteUrl}/)`);
   }
 } else {
   errors.push("Missing sitemap.xml in build output");

@@ -1,0 +1,9 @@
+# Primary canonical host: www.sanjuca.in
+https://sanjuca.in/* https://www.sanjuca.in/:splat 301
+http://sanjuca.in/* https://www.sanjuca.in/:splat 301
+http://www.sanjuca.in/* https://www.sanjuca.in/:splat 301
+
+https://sanjuca.com/* https://www.sanjuca.in/:splat 301
+https://www.sanjuca.com/* https://www.sanjuca.in/:splat 301
+http://sanjuca.com/* https://www.sanjuca.in/:splat 301
+http://www.sanjuca.com/* https://www.sanjuca.in/:splat 301

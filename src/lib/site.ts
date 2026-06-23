@@ -7,7 +7,8 @@ export const siteConfig = {
   serviceArea: "Pan-India",
   serviceAreaNote:
     "Headquartered in Sikar, Rajasthan — serving clients in every state and union territory through in-person, phone, email, and video consultations.",
-  url: "https://www.sanjuassociates.in",
+  url: "https://www.sanjuca.in",
+  domains: ["www.sanjuca.in", "sanjuca.in", "www.sanjuca.com", "sanjuca.com"],
   googleAnalyticsId: "G-HKNP3KVM8C",
   locale: "en_IN",
   email: "contact.sanjuassociates@gmail.com",
