@@ -1,8 +1,0 @@
-# Cloudflare Pages — static Next.js export (NOT OpenNext / Workers)
-# Dashboard build settings must match:
-#   Build command:          npm run build
-#   Build output directory: out
-#   Framework preset:       Next.js (Static HTML Export) — or None
-
-name = "sanju-associates"
-pages_build_output_dir = "out"
