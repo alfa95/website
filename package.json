@@ -12,7 +12,8 @@
     "start": "next start",
     "lint": "eslint",
     "verify": "node scripts/verify-build.mjs",
-    "check": "npm run build && npm run verify"
+    "check": "npm run build && npm run verify",
+    "cloudflare:deploy": "node scripts/cloudflare-deploy.mjs"
   },
   "dependencies": {
     "next": "16.2.9",
